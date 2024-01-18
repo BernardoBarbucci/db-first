@@ -4,17 +4,17 @@ Descrizione: Modellizzare la struttura di una tabella per memorizzare tutti i da
              delle auto usate messe in vendita da un concessionario
 
 id                              - intero    - MEDIUMINT         - 
-brand                           - stringa   - MEDIUMTEXT        -
-modello                         - stringa   - MEDIUMTEXT        -
-motorizzazione                  - stringa   - MEDIUMTEXT        -
-alimentazione                   - stringa   - MEDIUMTEXT        -
+brand                           - stringa   - VARCHAR(50)        -
+modello                         - stringa   - VARCHAR(40)        -
+motorizzazione                  - stringa   - VARCHAR(70)        -
+alimentazione                   - stringa   - VARCHAR(100)        -
 cilindrata                      - intero    - SMALLINT          -
 km percorsi                     - float     - FLOAT(8,2)        -
 anno di immatricolazione        - date      - DATE              -
-colore                          - stringa   - MEDIUMTEXT        -
+colore                          - stringa   - VARCHAR(50)        -
 numero proprietari precedenti   - intero    - SMALLINT          -
 optional                        - stringa   - TEXT              -
 storia del servizio             - stringa   - TEXT              -
-condizione                      - stringa   - MEDIUMTEXT        -
+condizione                      - stringa   - VARCHAR(200)        -
 prezzo                          - float     - FLOAT(9,2)        -
 disponibilità                   - booleano  - BOOLEAN (TINYINT) - NOT NULL - DEFAULT(TRUE)
