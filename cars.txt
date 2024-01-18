@@ -1,0 +1,19 @@
+Titolo: Database First
+
+Descrizione: Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti 
+             delle auto usate messe in vendita da un concessionario
+
+id                              - intero 
+brand                           -
+modello                         -
+motorizzazione                  -
+alimentazione                   -
+cilindrata                      -
+km percorsi                     -
+anno di immatricolazione        -
+colore                          -
+numero proprietari precedenti   -
+optional                        -
+storia del servizio             -
+condizione                      -
+prezzo                          -
