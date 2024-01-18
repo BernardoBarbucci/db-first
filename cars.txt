@@ -3,18 +3,18 @@ Titolo: Database First
 Descrizione: Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti 
              delle auto usate messe in vendita da un concessionario
 
-id                              - intero    - MEDIUMINT         - 
-brand                           - stringa   - VARCHAR(50)        -
-modello                         - stringa   - VARCHAR(40)        -
-motorizzazione                  - stringa   - VARCHAR(70)        -
-alimentazione                   - stringa   - VARCHAR(100)        -
-cilindrata                      - intero    - SMALLINT          -
-km percorsi                     - float     - FLOAT(8,2)        -
-anno di immatricolazione        - date      - DATE              -
-colore                          - stringa   - VARCHAR(50)        -
-numero proprietari precedenti   - intero    - SMALLINT          -
-optional                        - stringa   - TEXT              -
-storia del servizio             - stringa   - TEXT              -
-condizione                      - stringa   - VARCHAR(200)        -
-prezzo                          - float     - FLOAT(9,2)        -
+id                              - intero    - MEDIUMINT         - PRIMARY_KEY UNIQUE AUTO_INCREMENT - NOT NULL
+brand                           - stringa   - VARCHAR(50)       - NOT NULL
+modello                         - stringa   - VARCHAR(40)       - NOT NULL
+motorizzazione                  - stringa   - VARCHAR(70)       - NOT NULL
+alimentazione                   - stringa   - VARCHAR(100)      - NOT NULL
+cilindrata                      - intero    - SMALLINT          - NOT NULL
+km percorsi                     - float     - FLOAT(8,2)        - NOT NULL
+anno di immatricolazione        - date      - DATE              - NOT NULL
+colore                          - stringa   - VARCHAR(50)       - NOT NULL
+numero proprietari precedenti   - intero    - SMALLINT          - NULL
+optional                        - stringa   - TEXT              - NULL
+storia del servizio             - stringa   - TEXT              - NULL
+condizione                      - stringa   - VARCHAR(200)      - NOT NULL
+prezzo                          - float     - FLOAT(9,2)        - NOT NULL - DEAFULT (1)
 disponibilità                   - booleano  - BOOLEAN (TINYINT) - NOT NULL - DEFAULT(TRUE)
