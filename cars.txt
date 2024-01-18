@@ -3,18 +3,18 @@ Titolo: Database First
 Descrizione: Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti 
              delle auto usate messe in vendita da un concessionario
 
-id                              - intero    - 
-brand                           - stringa   -
-modello                         - stringa   -
-motorizzazione                  - stringa   -
-alimentazione                   - stringa   -
-cilindrata                      - intero    -
-km percorsi                     - intero    -
-anno di immatricolazione        - date      -
-colore                          - stringa   -
-numero proprietari precedenti   - intero    -
-optional                        - stringa   -
-storia del servizio             - stringa   -
-condizione                      - stringa   -
-prezzo                          - intero    -
-disponibilità                   - booleano  -
+id                              - intero    - MEDIUMINT         - 
+brand                           - stringa   - MEDIUMTEXT        -
+modello                         - stringa   - MEDIUMTEXT        -
+motorizzazione                  - stringa   - MEDIUMTEXT        -
+alimentazione                   - stringa   - MEDIUMTEXT        -
+cilindrata                      - intero    - SMALLINT          -
+km percorsi                     - float     - FLOAT(8,2)        -
+anno di immatricolazione        - date      - DATE              -
+colore                          - stringa   - MEDIUMTEXT        -
+numero proprietari precedenti   - intero    - SMALLINT          -
+optional                        - stringa   - TEXT              -
+storia del servizio             - stringa   - TEXT              -
+condizione                      - stringa   - MEDIUMTEXT        -
+prezzo                          - float     - FLOAT(9,2)        -
+disponibilità                   - booleano  - BOOLEAN (TINYINT) - NOT NULL - DEFAULT(TRUE)
